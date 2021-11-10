@@ -258,6 +258,19 @@ html {
 }
 
 
+.test_cat_photo {
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  width: 200px;
+  /* background-color: aquamarine; */
+}
+
+.cat_article {
+  display: flex;
+  justify-content: space-around;
+}
+
 
 
 
