@@ -50,11 +50,13 @@ html {
   /* margin: 0 auto; */
   width: 80vw;
   text-align: center;
-  height: var(--block-height);
+  height: auto;
   background-color: rgba(230, 248, 129, 0.95);
   color: #fff;
   border-radius: 10px;
 }
+
+
 
 .nav__link:link {
   display: inline-block;
@@ -140,7 +142,7 @@ html {
   margin-top: var(--standart-height-margin);
   border-radius: 10px;
   width: 80vw;
-  height: var(--block-height);
+  height: auto;
   background-color: rgba(230, 248, 129, 0.95);
   /* position: absolute;
   bottom: 0; */
@@ -252,6 +254,7 @@ html {
  height: auto; */
  height: 40vh;
  width: auto;
+ max-width: 70vw;
 }
 
 
