@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  --block-height: 60px;
+  --standart-height-margin: 20px;
+  
+}
+
+.body {
+  /* margin: 0 auto; */
+  /* border: 1px solid black */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.test {
+  display: block;
+  box-sizing: border-box;
+  width: 80vw;  
+  margin: 0 auto;
+  /* border: 1px solid black */
+}
+
+.bacground-main {
+  background-image: url(/images/back.jpg);
+}
+
+.header {
+  position: relative;
+  /* margin: 0 auto; */
+  /* top: 10px; */
+  width: 80vw;
+  background-color: rgba(255, 218, 175, 0.95);
+  margin: var(--standart-height-margin) 0;
+  /* padding: 15px 0; */
+  text-align: center;
+  border-radius: 10px;
+
+  font-size: 30px;
+  font-weight: bold;
+  line-height: var(--block-height);
+  
+}
+
+.nav {
+  position: sticky;
+  top: 0px;
+  /* margin: 0 auto; */
+  width: 80vw;
+  text-align: center;
+  height: var(--block-height);
+  background-color: rgba(230, 248, 129, 0.95);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.nav__link:link {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 10px;
+  padding: 20px 10px;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(190, 132, 245);
+  border-radius: 10px;
+}
+
+.nav__link:visited {
+  background-color: rgb(190, 132, 245);
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-button {
+  text-decoration: none;
+  color: rgb(139, 19, 252);
+}
+
+.link-button:hover {
+  cursor: pointer;
+}
+
+.link-button:visited {
+  text-decoration: none;
+  color: rgb(139, 19, 252);
+}
+
+.nav__link:hover {
+  background-color: rgba(41, 39, 39);
+}
+
+
+.main {
+  min-height: calc(100vh - var(--standart-height-margin)*4 - var(--block-height)*3 - 10px);
+    
+}
+
+.section {
+  /* margin: 0 auto; */
+}
+
+.article {
+  position: static;
+  display: block;
+  width: calc (80vw - 2px);
+  background-color: rgba(255, 218, 175, 0.95);
+  border-radius: 10px;
+  margin-top: var(--standart-height-margin);
+  border: 1px solid rgba(255, 218, 175, 0.95);;
+  padding: 0 10px; 
+}
+
+.paragraph-main {
+  text-align: left;  
+  padding: 0 10px;
+}
+
+.paragraph {
+  text-align: justify;  
+  font-size: 20px;  
+  padding: 0 10px;
+  
+}
+
+.button {
+  text-align: justify;  
+  font-size: 20px; 
+  background-color: rgba(230, 248, 129, 0.95);
+  margin: 15px 0 0 0;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 5px;
+}
+
+.footer {
+  line-height: var(--block-height);
+  font-size: 20px;
+  text-align: center;
+  margin-top: var(--standart-height-margin);
+  border-radius: 10px;
+  width: 80vw;
+  height: var(--block-height);
+  background-color: rgba(230, 248, 129, 0.95);
+  /* position: absolute;
+  bottom: 0; */
+  /* margin: 0 auto; */
+}
+
+#pic1 {
+  display:none;
+  
+}
+
+.cat_resultPicture {
+  position: absolute;
+  display: flex;
+  left: 65vw;
+  top: 32vh;
+  /* border: 3px solid rgba(230, 248, 129, 0.95);
+  border-radius: 10px; */
+}
+
+
+/* Это галерея котиков */
+
+.container-img {
+  margin-top: 10px;
+  width: calc(100vw-10px);
+  height: auto;
+}
+
+/* resize images */
+.container-img img {
+  width: 100%;
+  height: auto;
+}
+
+/* нужен для колон с фотками */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 33%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+
+
+.container-vid {
+  margin-top: 10px;
+  width: calc(100vw-10px);
+  height: auto;
+}
+
+.column-vid {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+
+.container-vid iframe {
+  width: 100%;
+  height: 250px;
+}
+
+.column-vid iframe {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+/* Делает SPAN по середине блока */
+.current_picture {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery {
+  display: none;
+}
+
+/* .button_next {
+  margin-left: calc(300px + 50px);
+  margin-left: 50vw;
+} */
+
+/* .button_prev {
+  margin-left: calc(50% - 120px);
+} */
+
+.button_block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pic_test {
+ /* width: 100%;
+ height: auto; */
+ height: 40vh;
+ width: auto;
+}
+
+
+
+
+
+
+
