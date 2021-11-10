@@ -288,7 +288,7 @@ html {
 
 
 /* Применяет другие стили при малом разрешении экрана */
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 600px) {
 
   html {
     scroll-behavior: smooth;
