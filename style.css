@@ -289,12 +289,14 @@ html {
 
 /* Применяет другие стили при малом разрешении экрана */
 @media only screen and (max-width: 600px) {
+  .class {
+
+  }
 
   html {
     scroll-behavior: smooth;
     --block-height: 30px;
     --standart-height-margin: 10px;
-    
   }
 
   .header {
