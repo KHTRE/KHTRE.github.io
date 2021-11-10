@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+
+
+
+
 html {
   scroll-behavior: smooth;
   --block-height: 60px;
@@ -20,7 +24,7 @@ html {
   box-sizing: border-box;
   width: 80vw;  
   margin: 0 auto;
-  /* border: 1px solid black */
+  
 }
 
 .bacground-main {
@@ -213,6 +217,12 @@ html {
 }
 
 
+
+
+
+
+
+
 .container-vid iframe {
   width: 100%;
   height: 250px;
@@ -277,3 +287,105 @@ html {
 
 
 
+/* Применяет другие стили при малом разрешении экрана */
+@media only screen and (max-width: 950px) {
+
+  html {
+    scroll-behavior: smooth;
+    --block-height: 30px;
+    --standart-height-margin: 10px;
+    
+  }
+
+  .header {
+    position: relative;
+    width: 80vw;
+    background-color: rgba(255, 218, 175, 0.95);
+    margin: var(--standart-height-margin) 0;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: var(--block-height);
+    
+  }
+
+  .nav {
+    position: sticky;
+    top: 0px;
+    /* margin: 0 auto; */
+    width: 80vw;
+    text-align: center;
+    height: auto;
+    background-color: rgba(230, 248, 129, 0.95);
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  .nav__link:link {
+    display: inline-block;
+    font-size: 10px;
+    margin: 0;
+    padding: 5px 5px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(190, 132, 245);
+    border-radius: 5px;
+    
+  }
+
+  .article {
+    position: static;
+    display: block;
+    width: calc (80vw - 2px);
+    background-color: rgba(255, 218, 175, 0.95);
+    border-radius: 5px;
+    margin-top: var(--standart-height-margin);
+    border: 1px solid rgba(255, 218, 175, 0.95);;
+    padding: 0 5px; 
+  }
+
+  .paragraph-main {
+    text-align: left; 
+    font-size: 20px; 
+    padding: 0 5px;
+  }
+  
+  .paragraph {
+    text-align: justify;  
+    font-size: 10px;  
+    padding: 0 5px;
+  }
+
+  .button {
+    text-align: justify;  
+    font-size: 10px; 
+    background-color: rgba(230, 248, 129, 0.95);
+    margin: 5px 0 0 0;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+  }
+  
+  .main {
+    min-height: calc(100vh - var(--standart-height-margin)*4 - var(--block-height)*3);
+  }
+
+  .footer {
+    line-height: var(--block-height);
+    font-size: 10px;
+    text-align: center;
+    margin-top: var(--standart-height-margin);
+    border-radius: 5px;
+    width: 80vw;
+    height: auto;
+    /* padding: 5px 0; */
+    background-color: rgba(230, 248, 129, 0.95);
+    /* position: absolute;
+    bottom: 0; */
+    /* margin: 0 auto; */
+  }
+
+  
+
+  
+}
